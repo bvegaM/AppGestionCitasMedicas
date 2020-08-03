@@ -119,6 +119,10 @@ const routes: Routes = [
   {
     path: 'ver-facturas',
     loadChildren: () => import('./pages/admin/facturas/ver-facturas/ver-facturas.module').then( m => m.VerFacturasPageModule)
+  },
+  {
+    path: 'ver-cita',
+    loadChildren: () => import('./pages/admin/cita/ver-cita/ver-cita.module').then( m => m.VerCitaPageModule)
   }
 ];
 
